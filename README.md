@@ -1,14 +1,5 @@
-## Sales Data Analysis with SQL and Power BI
+# Sales Data Analysis Using SQL and Power BI
 
-### Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/deepamkalekar/Sale-Data-Analysis-PowerBI.git
-```
-
-Go to the project directory and open ``` .pbix ``` file with Microsoft Power BI Desktop
 
 ### Data Analysis Using SQL
 
