@@ -7,13 +7,13 @@ The company has a head office in Delhi and regional offices throughout India.
 ---
 
 ## Business Issue
-The sales director is facing a lot of challenges. The marketing is growing dynamically, he is struggling to keep track of the sales. He needs more accurate insights about the company sales and then makes the necessary decisions.
+The sales director is currently encountering numerous challenges due to the rapid growth of the marketing department, making it difficult for him to effectively monitor and manage sales. To address this, he requires more precise insights regarding the company's sales performance in order to make informed decisions.
 
 ---
 
 ## Solution
 - Create a simple and informative dashboard about the company sales.
-- I used **`SQL`** queries in **`MySQL Workbench`** to look into the data and **`Tableau`** for **`ETL`** and **`Visualizations`** to create the insights dashboard.
+- I used **`SQL`** queries in **`Microsoft SQL Server Management Studio`** to look into the data and **`Power BI`** for **`ETL`** and **`Visualizations`** to create the insights dashboard.
 
 ---
 
@@ -166,7 +166,9 @@ The sales director is facing a lot of challenges. The marketing is growing dynam
 	
 # 
 #### `# Insights`
-After a quick data exploration in MySQL, here are some initial findings:
+can you refactor this and make it better?
+
+After a quick data exploration in MS SQL Server, here are some initial findings:
 - The database contains 5 tables: customers, date, markets, products, and transactions.
 - There are 17 markets, 279 products, and 38 customers.
 - The observation period is from OCT 2017 to JUN 2020.
@@ -177,7 +179,7 @@ After a quick data exploration in MySQL, here are some initial findings:
 ---
 
 ## ETL(Extract, Transform, Load)
-Once I knew the basic features of the data I had to work with, I Imported the MySQL database into Tableau to do the necessary transformations and make a simple, reliable, and helpful dashboard.
+Once I knew the basic features of the data I had to work with, I Imported the SQL database into Power BI to do the necessary transformations and make a simple, reliable, and helpful dashboard.
 
 # 
 
@@ -241,12 +243,5 @@ Based on the dashbaords insights, I have made some conclusions and recommendatio
 - start target campagin for Prod047 and Prod061 since they two are the most profitable and most selling products.
 - try to give special benefits to Electronics and Excel stores as they are most profitable customers.
 - make campgain strategy for mid year as they are showing high sales among other months.
-
----
-
-## *References*
-- *Tableau Dashboard: [AtliQ Hardware Sales Insights by Laxman Singh](https://public.tableau.com/views/AtliqHardware/AtliqHardware?:language=en-GB&:display_count=n&:origin=viz_share_link)*
-- *Project Data: [Google Sheet](https://docs.google.com/spreadsheets/d/1cidC_V9YrS789-ZYTdAM1OgIXZVa_XfkRVy5Cyp3Qk8/edit?usp=sharing) | [MySQL Dump File](https://github.com/Laxman-Lakhan/AtliQ-Hardware-Sales-Insights/blob/a7e93603f70e2352ef3595c3717e4e7f3b352697/Data/database_dump.sql)*
-- *Project Inspiration: [codebasics](https://youtube.com/playlist?list=PLeo1K3hjS3usDI9XeUgjNZs6VnE0meBrL) YouTube channel.*
 
 
