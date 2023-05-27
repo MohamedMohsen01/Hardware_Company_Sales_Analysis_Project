@@ -17,164 +17,19 @@ The sales director is currently encountering numerous challenges due to the rapi
 
 ---
 
-## Data Overview
-
-#### `# Tables`
-    
-<table>
-<tr><th>1. transactions</th><th>2. customers</th><th>3. date</th><th> 4. products </th><th> 5. markets </th></tr>
-<tr><td>
-
-|Field Name|Description|
-|----|---|
-|Product Code|ProdXXX|
-|Customer Code|CusXXX|
-|Market Code|MarkXXX|
-|Order Date|YYYY-MM-DD|
-|Sales Qty|Quantity Sold|
-|Sales Amount|Sales Amount|
-|Currency|INR/USD|
-|Profit Margin|(Sales Amount - Cost)/(Sales Amount)|
-|Profit|(Sales Amount-Cost)|
-|Cost|Total Cost of a Product|
-
-</td><td>
-
-|Field Name|Description|
-|---|---|
-|Customer Code|CusXXX|
-|Custmer Name|Stores Names|
-|Customer Type|Brick & Mortar/ E-Commerce|
-
-</td><td>
-
-|Field Name|Description|
-|---|---|
-|Date|YYYY-MM-DD|
-|Cy Date|YYYY-MM-DD: Starting date of each month of date|
-|Year|YYYY: Year of the date|
-|Month Name|MMMM: Month of the date column|
-|Date Yy Mmm|DD-MMM: Date and Month of the date column|
-	
-</td><td>
-	
-|Field Name|Description|
-|---|---|
-|Product Code|ProdXXX|
-|Product Type|Own Brand/Distribution|
-
-</td><td>
-
-|Field Name|Description|
-|---|---|
-|Markets Code|MarkXXX|
-|Markets Name|City Names|
-|Zone|South/Central/North|
-
-
-</td></tr> </table>
-
-#  
-#### `# Data Analysis Using SQL`
-
-1. Show all tables and their rows in sales schema
-    	 
-	 > ```
-	 > SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_ROWS  
-	 > FROM INFORMATION_SCHEMA.TABLES 
-	 > WHERE TABLE_SCHEMA = 'sales';
-	 > ```
-	 > |TABLE_SCHEMA|TABLE_NAME|TABLE_ROWS|
-	 > |---|----|---|
-	 > |sales|customers|38|
-	 > |sales|date|1126|
-	 > |sales|markets|17|
-	 > |sales|products|279|
-	 > |sales|ransactions|147678|
-
-
-1. Show date range
-    	
-	> ```
-	> SELECT 'First Date', MIn(Order_Date)  
-	> FROM sales.transactions  
-	> UNION  
-	> SELECT 'Last Date', MAX(Order_Date)  
-	> FROM sales.transactions;
-	> ``` 
-	> 
-	> <table>
-	> <tr>
-	>     <td>First Date</td>
-	>     <td>2017-10-04</td>
-	> </tr>
-	> <tr>
-	>     <td>Last Date</td>
-	>     <td>2020-06-26</td>
-	> </tr>
-	> </table>
-
-
-1. Show Revenue in 2020 and 2019.
-
-	> ```
-	> SELECT d.year, SUM(Sales_Amount)
-	> FROM sales.transactions as t
-	> JOIN sales.date as d
-	> ON t.Order_Date = d.date
-	> WHERE d.year = '2019'
-	> UNION
-	> SELECT d.year, SUM(Sales_Amount)
-	> FROM sales.transactions as t
-	> JOIN sales.date as d
-	> ON t.Order_Date = d.date
-	> WHERE d.year = '2020';
-	> ``` 
-	> 
-	> <table>
-	> <tr>
-	>     <td>2019</td>
-	>     <td>336019102</td>
-	> </tr>
-	> <tr>
-	>     <td>2020</td>
-	>     <td>142224545</td>
-	> </tr>
-	> </table>
-
-
-
-1. Show distinct currency and their count
-
-	> ```
-	> SELECT currency, COUNT(currency)
-	> FROM sales.transactions
-	> GROUP BY currency;
-	> ``` 
-	> 
-	> <table>
-	> <tr>
-	>     <td>INR</td>
-	>     <td>148393</td>
-	> </tr>
-	> <tr>
-	>     <td>USD</td>
-	>     <td>2</td>
-	> </tr>
-	> </table>
 
 	
 # 
 #### `# Insights`
-can you refactor this and make it better?
+
 
 After a quick data exploration in MS SQL Server, here are some initial findings:
-- The database contains 5 tables: customers, date, markets, products, and transactions.
-- There are 17 markets, 279 products, and 38 customers.
-- The observation period is from OCT 2017 to JUN 2020.
-- The total revenue in 2020 was ₹ 142.22 M, 57.7% less than 2019, which was ₹ 336.02 M.
-- Most of the transactions data are in INR(₹) currency, but we have 2 records in US($) currency. 
-- And we got some garbage values in sales amount and market column. We’re going to deal with it in the ETL process.
+- The database comprises five tables: customers, date, markets, products, and transactions.
+- The dataset includes 17 markets, 279 products, and 38 customers.
+- The recorded data spans from October 2017 to June 2020.
+-  In 2020, the total revenue amounted to ₹142.22 million, indicating a significant decrease of 57.7% compared to the previous year's revenue of ₹336.02 million.
+- Currency Discrepancy: While the majority of transactions are denoted in Indian Rupees (₹), two records are in US Dollars ($).
+- The sales amount and market columns contain some erroneous values that will be addressed during the ETL (Extract, Transform, Load) process.
 
 ---
 
