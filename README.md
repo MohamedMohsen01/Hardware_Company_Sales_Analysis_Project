@@ -12,8 +12,11 @@ The sales director is currently encountering numerous challenges due to the rapi
 ---
 
 ## Methodology
-I created an interactive and informative sales dashboard for the company using SQL queries in Microsoft SQL Server Management Studio for data analysis and Power BI for ETL and visualizations.  GitHub Link
-By leveraging SQL queries in Microsoft SQL Server Management Studio, I gathered and examined relevant data from various sources, gaining valuable insights into the company's sales performance. Using Power BI's ETL capabilities, I transformed and loaded the extracted data into a suitable format for the sales dashboard.
+I created an interactive and informative sales dashboard for the company using SQL queries in Microsoft SQL Server Management Studio for data analysis and Power BI for ETL and visualizations.
+
+By leveraging SQL queries in Microsoft SQL Server Management Studio, I gathered and examined relevant data from various sources, gaining valuable insights into the company's sales performance. 
+
+Using Power BI's ETL capabilities, I transformed and loaded the extracted data into a suitable format for the sales dashboard.
 Utilizing Power BI's extensive visualizations, I designed an intuitive and user-friendly dashboard that presents sales data in an interactive manner. This allows stakeholders to effortlessly explore and analyze key metrics, trends, and patterns.
 
 ---
