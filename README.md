@@ -44,7 +44,7 @@ We have a main table and four additional tables that share a common column with 
 
 
 
-<img align="right" alt="Coding" width="573" src= "https://github.com/Laxman-Lakhan/AtliQ-Hardware-Sales-Analysis/blob/acba4322c422a8dac8b24a450ca1b6a35384617a/Data/Screenshots/ETL_.png" >
+<img align="right" alt="Coding" width="573" src= "https://github.com/Laxman-Lakhan/AtliQ-Hardware-Sales-insights/blob/acba4322c422a8dac8b24a450ca1b6a35384617a/Data/Screenshots/ETL_.png" >
 
 - Main Table: transactions
 
