@@ -40,8 +40,11 @@ After a quick data exploration in MS SQL Server, here are some initial findings:
 # 
 
 #### # Data Modeling Steps
-We have one main table and four other tables having one shared column with the main table. So we will connect the other tables to the main table using the shared columns.
-<img align="right" alt="Coding" width="573" src= "https://github.com/Laxman-Lakhan/AtliQ-Hardware-Sales-Insights/blob/acba4322c422a8dac8b24a450ca1b6a35384617a/Data/Screenshots/ETL_.png" >
+We have a main table and four additional tables that share a common column with the main table. To establish connections between these tables, we will link the other tables to the main table using the shared columns.
+
+
+
+<img align="right" alt="Coding" width="573" src= "https://github.com/Laxman-Lakhan/AtliQ-Hardware-Sales-Analysis/blob/acba4322c422a8dac8b24a450ca1b6a35384617a/Data/Screenshots/ETL_.png" >
 
 - Main Table: transactions
 
