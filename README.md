@@ -28,17 +28,14 @@ Utilizing Power BI's extensive visualizations, I designed an intuitive and user-
 
 
 After a quick data exploration in MS SQL Server, here are some initial findings:
-The database comprises five tables: customers, date, markets, products, and transactions.
-The dataset includes 17 markets, 279 products, and 38 customers.
-The recorded data spans from October 2017 to June 2020.
-In 2020, the total revenue amounted to ₹142.22 million, indicating a significant decrease of 57.7% compared to the previous year's revenue of ₹336.02 million.
-Currency Discrepancy: While the majority of transactions are denoted in Indian Rupees (₹), two records are in US Dollars ($).
-The sales amount and market columns contain some erroneous values that will be addressed during the ETL (Extract, Transform, Load) process.
+- The database comprises five tables: customers, date, markets, products, and transactions.
+- The dataset includes 17 markets, 279 products, and 38 customers.
+- The recorded data spans from October 2017 to June 2020.
+- In 2020, the total revenue amounted to ₹142.22 million, indicating a significant decrease of 57.7% compared to the previous year's revenue of ₹336.02 million.
+- Currency Discrepancy: While the majority of transactions are denoted in Indian Rupees (₹), two records are in US Dollars ($).
+- The sales amount and market columns contain some erroneous values that will be addressed during the ETL (Extract, Transform, Load) process.
 
 ---
-
-### ETL(Extract, Transform, Load)
-Once I knew the basic features of the data I had to work with, I Imported the SQL database into Power BI to do the necessary transformations and make a simple, reliable, and helpful dashboard.
 
 # 
 
@@ -65,10 +62,10 @@ We have one main table and four other tables having one shared column with the m
 ---
 
 ## Conclusions
-Sales were rapidly decreasing in 2020 compared to 2019 by around 57.7%.
-Highest revenue generated from Markets such as Delhi NCR, Mumbai, Ahmedabad, Bhopal, Nagpur, and so on.
-Highest quantities sold in the Market such as Delhi NCR, Mumbai, Nagpur, Kochi, Ahmedabad, and so on.
-Majority of the sales were takes place in the month of January followed by November and March.
+- Sales were rapidly decreasing in 2020 compared to 2019 by around 57.7%.
+- Highest revenue generated from Markets such as Delhi NCR, Mumbai, Ahmedabad, Bhopal, Nagpur, and so on.
+- Highest quantities sold in the Market such as Delhi NCR, Mumbai, Nagpur, Kochi, Ahmedabad, and so on.
+- Majority of the sales were takes place in the month of January followed by November and March.
 
 ## Recommendation
 #### Proposed sales strategy:
