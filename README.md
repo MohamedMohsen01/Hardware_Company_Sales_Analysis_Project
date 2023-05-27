@@ -21,7 +21,7 @@ Utilizing Power BI's extensive visualizations, I designed an intuitive and user-
 
 	
 # 
-#### `# Insights`
+## Insights
 
 
 After a quick data exploration in MS SQL Server, here are some initial findings:
@@ -34,7 +34,7 @@ The sales amount and market columns contain some erroneous values that will be a
 
 ---
 
-## ETL(Extract, Transform, Load)
+### ETL(Extract, Transform, Load)
 Once I knew the basic features of the data I had to work with, I Imported the SQL database into Power BI to do the necessary transformations and make a simple, reliable, and helpful dashboard.
 
 # 
@@ -61,13 +61,13 @@ We have one main table and four other tables having one shared column with the m
 
 ---
 
-#### # Conclusions
+## Conclusions
 Sales were rapidly decreasing in 2020 compared to 2019 by around 57.7%.
 Highest revenue generated from Markets such as Delhi NCR, Mumbai, Ahmedabad, Bhopal, Nagpur, and so on.
 Highest quantities sold in the Market such as Delhi NCR, Mumbai, Nagpur, Kochi, Ahmedabad, and so on.
 Majority of the sales were takes place in the month of January followed by November and March.
 
-#### # Recommendation
+## Recommendation
 #### Proposed sales strategy:
 Identify low-performing markets:
  1. Analyze the performance of Lucknow, Surat, and Bhubhaneshwar.
