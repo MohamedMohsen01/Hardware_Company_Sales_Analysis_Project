@@ -2,29 +2,67 @@
 
 # Data Analysis Using SQL
 
-Show all customer records
+--looking for customer details
 SELECT * FROM customers;
 
-Show total number of customers
-SELECT count(*) FROM customers;
+--looking for transaction details
+SELECT * FROM transactions;
 
-Show transactions for Chennai market (market code for chennai is Mark001
-SELECT * FROM transactions where market_code='Mark001';
+--looking for product details
+SELECT * FROM products;
 
-Show distrinct product codes that were sold in chennai
-SELECT distinct product_code FROM transactions where market_code='Mark001';
+--looking for market details
+SELECT * FROM markets;
 
-Show transactions where currency is US dollars
-SELECT * from transactions where currency="USD"
+--looking for time details
+SELECT * FROM date;
 
-Show transactions in 2020 join by date table
-SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;
+--total number of transactions taken place
+SELECT count(*) FROM transactions;
 
-Show total revenue in year 2020,
-SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";
+--looking for transactions with particular currency
+SELECT * FROM transactions WHERE currency = 'USD';
 
-Show total revenue in year 2020, January Month,
-SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");
+--looking for transactions from specific market code
+SELECT * FROM transactions WHERE market_code = 'Mark001';
+SELECT count(*) FROM transactions WHERE market_code = 'Mark001';
 
-Show total revenue in year 2020 in Chennai
-SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.market_code="Mark001";
+--looking for transactions that took place in particular year or month
+SELECT * FROM date;
+
+SELECT transactions.*, date.* 
+FROM transactions 
+	INNER JOIN date 
+		ON transactions.order_date = date.date
+
+SELECT transactions.*, date.* 
+FROM transactions 
+	INNER JOIN date 
+		ON transactions.order_date = date.date WHERE date.year = 2020;
+
+SELECT SUM(transactions.sales_amount) 
+FROM transactions 
+	INNER JOIN date 
+		ON transactions.order_date = date.date 
+		WHERE (date.year=2020) AND (date.month_name = 'January');
+
+--total revenue earned in a particular year
+SELECT SUM(sales_amount) 
+FROM transactions 
+	INNER JOIN date 
+		ON transactions.order_date = date.date 
+			WHERE date.year = 2020;
+			
+
+--finding the average of profit_margin
+SELECT AVG(profit_margin) FROM transactions;
+
+--total revenue earned in a particular year and in particular market
+SELECT SUM(transactions.sales_amount)
+FROM transactions 
+	INNER JOIN date 
+		ON transactions.order_date = Date.date 
+			WHERE date.year = 2020 AND transactions.market_code = 'Mark001'; 
+
+--distinct product sold in particular market
+SELECT DISTINCT product_code FROM transactions WHERE market_code = 'Mark001';
