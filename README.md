@@ -1,14 +1,16 @@
 # Software_Company_Sales_Analysis
-# looking for customer details
+
+looking for customer details
+
 SELECT * FROM customers;
 
-# looking for transaction details
+looking for transaction details
 SELECT * FROM transactions;
 
-# looking for product details
+looking for product details
 SELECT * FROM products;
 
-# looking for market details
+looking for market details
 SELECT * FROM markets;
 
 --looking for time details
