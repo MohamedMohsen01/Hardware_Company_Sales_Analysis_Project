@@ -70,20 +70,27 @@ We have a main table and four additional tables that share a common column with 
 - Highest quantities sold in the Market such as Delhi NCR, Mumbai, Nagpur, Kochi, Ahmedabad, and so on.
 - Majority of the sales were takes place in the month of January followed by November and March.
 
+---
+
 ## Recommendation
 #### Proposed sales strategy:
+
 Identify low-performing markets:
  1. Analyze the performance of Lucknow, Surat, and Bhubhaneshwar.
  2. Focus on improving revenue and profit margins in these cities.
+
 Improve sales quantity in low-performing cities:
  1. Concentrate efforts on increasing sales in Patna, Surat, and Kanpur, which have the lowest sales quantity.
  2. Explore potential reasons for the low sales and address them accordingly (e.g., market research, targeted advertising, competitive pricing).
+
 Target campaign for high-performing products:
  1. Launch a targeted campaign for Prod047 and Prod061, as they are the most profitable and top-selling products.
  2. Allocate additional marketing resources to promote these products effectively.
+
 Provide special benefits to Electronics and Excel stores:
  1. Identify the most profitable customers, specifically in the Electronics and Excel stores.
  2. Offer exclusive incentives such as discounts, loyalty programs, or personalized offers to enhance their loyalty and encourage repeat purchases.
+
 Campaign strategy for mid-year sales:
  1. Leverage the high sales performance during the mid-year period.
  2. Design a compelling campaign to capitalize on this trend and further boost sales during this time.
