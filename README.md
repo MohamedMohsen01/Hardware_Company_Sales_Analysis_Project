@@ -98,4 +98,6 @@ Campaign strategy for mid-year sales:
 
 By implementing these strategies, we aim to improve revenue and profit margins in Lucknow, Surat, and Bhubhaneshwar, increase sales quantity in Patna, Surat, and Kanpur, and maximize sales during the mid-year period.
 
+## Dashboard
 
+For the Dashboard, please feel free to visit my [Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjcwMDFiOTYtMzI3Zi00YjQ2LWFkMTMtNDFiMDViMDEwNzM0IiwidCI6IjMzODU0OWQ1LThiMDgtNDdlMS1iOGQyLWJlNTIwZTJiM2FkNSJ9
