@@ -100,4 +100,4 @@ By implementing these strategies, we aim to improve revenue and profit margins i
 
 ## Dashboard
 
-For the Dashboard, please feel free to visit my [Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjcwMDFiOTYtMzI3Zi00YjQ2LWFkMTMtNDFiMDViMDEwNzM0IiwidCI6IjMzODU0OWQ1LThiMDgtNDdlMS1iOGQyLWJlNTIwZTJiM2FkNSJ9
+For the Dashboard, please feel free to visit my [Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMjcwMDFiOTYtMzI3Zi00YjQ2LWFkMTMtNDFiMDViMDEwNzM0IiwidCI6IjMzODU0OWQ1LThiMDgtNDdlMS1iOGQyLWJlNTIwZTJiM2FkNSJ9)
